@@ -3,7 +3,7 @@ from discord.ext import commands, tasks
 import threading
 import asyncio
 import time
-TOKEN = "ODU2NTg3OTA0NDY5MDQxMTgz.YNDNpw.FH3AnHLa37osKv9D8w1CvXNPT6w"
+TOKEN = "add token"
 
 bot = commands.Bot(command_prefix='')
 

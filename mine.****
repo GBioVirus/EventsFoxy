@@ -1,11 +1,38 @@
+#!/usr/bin/python
+
+# encoding: utf-8\
+
 import discord
+
 from discord.ext import commands, tasks
+
 import threading
+
+from discord.ext.commands import TextChannelConverter
+
 import asyncio
+
+import random
+
 import time
+
+import json
+
+import requests
+
+from discord import Option
+
+#from discord.ext.games import TicTacToe
+
+from background import keep_alive
+
+from discord.ext.commands import cooldown, BucketType
 TOKEN = "add token"
 
 bot = commands.Bot(command_prefix='')
+intents = discord.Intents.all()
+
+bot = commands.Bot(command_prefix='k!', intents=intents)
 
 games = []
 

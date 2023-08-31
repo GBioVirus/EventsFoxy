@@ -1,16 +1,14 @@
-import discord
+limport discord
 from discord.ext import commands, tasks
 import threading
 import asyncio
 import time
-from background import keep_alive
 
 TOKEN = "твой токен"
 
 intents = discord.Intents.all()
 bot = commands.Bot(command_prefix='', intents=intents)
 games = []
-keep_alive()
 
 @bot.event
 async def on_ready():
